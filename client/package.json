@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
-    "start:production": "pm2 start --name 'jira_client' server.js",
+    "start:production": "node server.js",
     "test:jest": "jest",
     "test:cypress": "node_modules/.bin/cypress open",
     "build": "rm -rf build && webpack --config webpack.config.production.js --progress",
@@ -39,7 +39,7 @@
     "prettier": "^1.19.1",
     "style-loader": "^1.0.1",
     "url-loader": "^3.0.0",
-    "webpack": "^4.41.2",
+    "webpack": "^4.46.0",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
   },
